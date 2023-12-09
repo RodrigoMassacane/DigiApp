@@ -1,0 +1,277 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{84ED1E7F-D28D-4181-A825-87FC89FCA72D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>digimonapp</RootNamespace>
+    <AssemblyName>digimonapp</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Contacto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Contacto.Designer.cs">
+      <DependentUpon>Contacto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DigiPedia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DigiPedia.Designer.cs">
+      <DependentUpon>DigiPedia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAltaDigimon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAltaDigimon.Designer.cs">
+      <DependentUpon>frmAltaDigimon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Games.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Games.Designer.cs">
+      <DependentUpon>Games.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Games2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Games2.Designer.cs">
+      <DependentUpon>Games2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Ventana2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ventana2.Designer.cs">
+      <DependentUpon>Ventana2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VentanaStory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VentanaStory.Designer.cs">
+      <DependentUpon>VentanaStory.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Contacto.resx">
+      <DependentUpon>Contacto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DigiPedia.resx">
+      <DependentUpon>DigiPedia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAltaDigimon.resx">
+      <DependentUpon>frmAltaDigimon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Games.resx">
+      <DependentUpon>Games.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Games2.resx">
+      <DependentUpon>Games2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Ventana2.resx">
+      <DependentUpon>Ventana2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VentanaStory.resx">
+      <DependentUpon>VentanaStory.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\352ba252a1a60bba02555ca5412abeec.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\509-5095768_thumb-image-digimon-digital-monsters-logo-hd-png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\digimon_tamers_icon_by_bazookatone_d7pa8gd-fullview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0a71d98bd5335d2074b1098b8575cdeb.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\404100.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\dominio\dominio.csproj">
+      <Project>{f824956d-ce2e-4f37-815b-131886c5afe2}</Project>
+      <Name>dominio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\negocio\negocio.csproj">
+      <Project>{6e45f0ef-34bd-4036-b0cb-ee9be33b5ff3}</Project>
+      <Name>negocio</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4041001.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\desktop-wallpaper-wargreymon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\descarga.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0a995dc2ceb46d6c02749a2925ba8e3f.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\462839da82ccbf0e0f7e6dd091e33cd1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3GhDbla.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\digimon_tamers_icon_by_bazookatone_d7pa8gd-fullview1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20519259.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\digimon-2250x1342-anime-digimon-hd-art-wallpaper-preview.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\digimon-battle-spirit-201421918648_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\digimon-battle-spirits-2-201441816451_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20111022103811_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\digimon-world-4-20142219485_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2012512125028_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Digimon_Racing_Coverart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\descarga %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\digimon-world-next-order-20171213226_1b.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\digimon-world-next-order-2016915122034_1uhgiugih.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\diiujbiuhgimon-universe-appli-monsters-201921221265939_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dddigimon-story-cyber-sleuth-hackers-memory-2018119114615_11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\digimon-survive-20228312352973_7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\digimon-allstar-rumble-2014111210515_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\digimon-adventure-20151221121813_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\digimon_wallpaper_by_scytheaandlanarkine_db8r9vn-fullview.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4041002.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Digimon-Adventure-Tri-Action-Desktop-Wallpaper-108474.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1275502.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\12755021.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\12755022.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\descarga %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\509-5095768_thumb-image-digimon-digital-monsters-logo-hd-png1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\509-5095768_thumb-image-digimon-digital-monsters-logo-hd-png2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\352ba252a1a60bba02555ca5412abeec1.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

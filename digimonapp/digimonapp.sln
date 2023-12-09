@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34024.191
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "digimonapp", "digimonapp\digimonapp.csproj", "{84ED1E7F-D28D-4181-A825-87FC89FCA72D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dominio", "dominio\dominio.csproj", "{F824956D-CE2E-4F37-815B-131886C5AFE2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "negocio", "negocio\negocio.csproj", "{6E45F0EF-34BD-4036-B0CB-EE9BE33B5FF3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{84ED1E7F-D28D-4181-A825-87FC89FCA72D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84ED1E7F-D28D-4181-A825-87FC89FCA72D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84ED1E7F-D28D-4181-A825-87FC89FCA72D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84ED1E7F-D28D-4181-A825-87FC89FCA72D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F824956D-CE2E-4F37-815B-131886C5AFE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F824956D-CE2E-4F37-815B-131886C5AFE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F824956D-CE2E-4F37-815B-131886C5AFE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F824956D-CE2E-4F37-815B-131886C5AFE2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E45F0EF-34BD-4036-B0CB-EE9BE33B5FF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E45F0EF-34BD-4036-B0CB-EE9BE33B5FF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E45F0EF-34BD-4036-B0CB-EE9BE33B5FF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E45F0EF-34BD-4036-B0CB-EE9BE33B5FF3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CE0FD33B-3946-4DFB-A9E7-984E90B35F9D}
+	EndGlobalSection
+EndGlobal
